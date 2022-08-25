@@ -6,17 +6,19 @@
       <a href="/hike/{{hike.id}}">{{hike.hikeName}}</a>
     </h2>
     <div class="col-md-7">
-      <p>
+
+      {{!-- Changed the font size of the hike info. --}}
+      <h5>
         {{hike.time}}
-      </p>
-      <p> 
+      </h5>
+      <h5> 
         {{hike.hikeLength}}
-      </p>
-      <p>
+      </h5>
+      <h5>
         {{hike.elevationChange}}
-      </p>
+      </h5>
       </div>
-      <p>Created by {{hike.userName}}</p>
+      <h5>Created by {{hike.userName}}</h5>
   </div>
 </div>
 {{/each}}

@@ -39,6 +39,25 @@ body {
   background: #81c784;
   color: #4e342e;
 }
+/* This will make my header images shake when you hover over them. */
+img:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
 h1,
 h2,
@@ -124,25 +143,10 @@ body {
   color: #fafbfa;
 }
 
-/* For pricing text on card front cover */
-/* .card-front__text-price {
-  font-size: 1.2rem;
-  margin-top: -.2rem;
-} */
-
 /* The text color inside the card */
 .inside-page__text {
   color: rgb(0, 0, 0);
 }
-
-/* 
-.card-front__icon {
-  fill: #fafbfa;
-  font-size: 3vw;
-  height: 3.25rem;
-  margin-top: -.5rem;
-  width: 3.25rem;
-} */
 
 /* Container to hold the card in one place and not hover. */
 .card-area {
@@ -218,7 +222,7 @@ body {
   width: 15rem;
 }
 
-/* This will display the coloe scheme on the card. */
+/* This will display the color scheme on the card. */
 .card-front__tp {
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
@@ -289,8 +293,3 @@ body {
 .card:hover .flip-card__container {
   transform: rotateY(-180deg);
 }
-
-/* When the card is hovered, the shadow on the inside page will shrink to the left */
-/* .card:hover .inside-page {
-  box-shadow: inset 1rem 0px 5rem -2.5rem rgb(242, 3, 3);
-} */
