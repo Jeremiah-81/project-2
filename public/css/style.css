@@ -58,9 +58,6 @@ img:hover {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-
-h1,
-h2,
 h3 {
   font-family: Montserrat, sans-serif;
 }
@@ -82,8 +79,6 @@ body {
   color: #4e342e;
 }
 
-h1,
-h2,
 h3 {
   font-family: Montserrat, sans-serif;
 }
