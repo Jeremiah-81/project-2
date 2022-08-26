@@ -15,19 +15,7 @@
 ::before{
   box-sizing: border-box;
 }
-/* 
-.container{
-  z-index: 1;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("bg-cover.jfif") fixed;
-  background-size: cover;
-  height: 100vh;
-} */
- 
+
 /* This puts a gap in the page from the header */
 .bird{
   background: url("https://raw.githubusercontent.com/Jeremiah-81/project-2/079ccc6c09d698a1c2a38a285044f7ba0b53c301/assets/Eagle-Silhouette-2.svg");
