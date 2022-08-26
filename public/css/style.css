@@ -30,7 +30,7 @@
  
 /* This puts a gap in the page from the header */
 .bird{
-  background: url("file:///C:/Users/terra/Downloads/Eagle-Silhouette-2.svg");
+  background: url("https://raw.githubusercontent.com/Jeremiah-81/project-2/079ccc6c09d698a1c2a38a285044f7ba0b53c301/assets/Eagle-Silhouette-2.svg");
   background-size: auto 100%;
   width: 88px;
   height: 125px;
@@ -63,7 +63,7 @@
 
 .bird-container{
 position: absolute;
-top: 20%;
+top: 40%;
 left: -10%;
 transform: scale(0) translateX(-10vw);
 will-change: transform;
@@ -128,7 +128,7 @@ animation-iteration-count: infinite;
   }
   
   100%{    
-    transform: translate(100vw, 0) scale(.6);
+    transform: translate(120vw, 0) scale(.6);
   }
 }
 
