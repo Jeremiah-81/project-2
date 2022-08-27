@@ -405,3 +405,4 @@ body {
 .card:hover .flip-card__container {
   transform: rotateY(-180deg);
 }
+
