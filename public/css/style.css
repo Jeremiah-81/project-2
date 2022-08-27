@@ -7,12 +7,12 @@
 
 *,
 ::after,
-::before{
+::before {
   box-sizing: border-box;
 }
 
 /* This is an animated bird in the bckground of the page. */
-.bird{
+.bird {
   background: url("https://raw.githubusercontent.com/Jeremiah-81/project-2/079ccc6c09d698a1c2a38a285044f7ba0b53c301/assets/Eagle-Silhouette-2.svg");
   background-size: auto 100%;
   width: 88px;
@@ -21,102 +21,102 @@
   animation-name: fly-pattern;
   animation-timing-function: steps(10);
   animation-iteration-count: infinite;
-} 
- /* end of gap */
- 
-.bird-one{
+}
+/* end of gap */
+
+.bird-one {
   animation-duration: 1s;
-  animation-delay: -.5s;
+  animation-delay: -0.5s;
 }
 
-.bird-two{
-  animation-duration: .9s;
-  animation-delay: -.75s;
+.bird-two {
+  animation-duration: 0.9s;
+  animation-delay: -0.75s;
 }
 
-.bird-three{
+.bird-three {
   animation-duration: 1.25s;
-  animation-delay: -.25s;
+  animation-delay: -0.25s;
 }
 
-.bird-four{
+.bird-four {
   animation-duration: 1.1s;
-  animation-delay: -.5s;
-} 
-
-.bird-container{
-position: absolute;
-overflow: hidden;
-top: 40%;
-left: -10%;
-transform: scale(0) translateX(-10vw);
-will-change: transform;
-animation-name: fly-right-one;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+  animation-delay: -0.5s;
 }
 
-.bird-container-one{
+.bird-container {
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bird-container-one {
   animation-duration: 15s;
   animation-delay: 0s;
 }
 
-.bird-container-two{
+.bird-container-two {
   animation-duration: 16s;
   animation-delay: 1s;
 }
 
-.bird-container-three{
+.bird-container-three {
   animation-duration: 17s;
   animation-delay: 2s;
 }
 
-.bird-container-four{
+.bird-container-four {
   animation-duration: 18s;
   animation-delay: 3s;
 }
 
-@keyframes fly-cycle{
-  100%{
+@keyframes fly-cycle {
+  100% {
     background-position: -900px 0;
-   }
-}
-
-@keyframes fly-right-one{
-  0%{
-    transform: scale(.3) translateX(-10vw);
-  }
-
-  10%{
-    transform: translate(10vw, 2vh) scale(.4);
-  }
-
-  20%{
-    transform: translate(30vw, 0) scale(.5);
-  }
-
-  30%{    
-    transform: translate(50vw, 4vh) scale(.6);
-  }
-  
-  40%{    
-    transform: translate(70vw, 2vh) scale(.6);
-  }
-  
-  50%{    
-    transform: translate(90vw, 0) scale(.6);
-  }
-  
-  60%{    
-    transform: translate(110vw, 0) scale(.6);
-  }
-  
-  100%{    
-    transform: translate(120vw, 0) scale(.6);
   }
 }
 
-/* Background bird ends here. */
+@keyframes fly-right-one {
+  0% {
+    transform: scale(0.3) translateX(-10vw);
+  }
+
+  10% {
+    transform: translate(10vw, 2vh) scale(0.4);
+  }
+
+  20% {
+    transform: translate(30vw, 0) scale(0.5);
+  }
+
+  30% {
+    transform: translate(50vw, 4vh) scale(0.6);
+  }
+
+  40% {
+    transform: translate(70vw, 2vh) scale(0.6);
+  }
+
+  50% {
+    transform: translate(90vw, 0) scale(0.6);
+  }
+
+  60% {
+    transform: translate(110vw, 0) scale(0.6);
+  }
+
+  100% {
+    transform: translate(120vw, 0) scale(0.6);
+  }
+}
+
+/* Background bird end here. */
 
 h1 {
   background-color: rgb(57, 0, 0);
@@ -158,17 +158,39 @@ img:hover {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 h3 {
@@ -211,7 +233,7 @@ img {
   width: 150px;
 }
 
-/* CSS reset */
+/*  CSS will reset the sizing */
 *,
 *::after,
 *::before {
@@ -323,7 +345,7 @@ body {
   width: 100%;
 }
 
-/* The short strip on the bottom the card */
+/* This is the short strip on the bottom the card */
 .card-front {
   background-color: #fafbfa;
   height: 15rem;
@@ -401,4 +423,3 @@ body {
 .card:hover .flip-card__container {
   transform: rotateY(-180deg);
 }
-
