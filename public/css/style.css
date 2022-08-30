@@ -47,7 +47,7 @@
 .bird-container {
   position: absolute;
   overflow: hidden;
-  top: 40%;
+  top: 45%;
   left: -10%;
   transform: scale(0) translateX(-10vw);
   will-change: transform;
